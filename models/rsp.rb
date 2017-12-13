@@ -7,27 +7,27 @@ class Game
   end
 
   def play()
-    if @move1 == "scissors" && @move2 == "paper"
+    if @move1 == ("scissors") && @move2 == ("paper")
       return "#{@move1} beats #{@move2}"
     end
-    if @move1 == "scissors" && @move2 == "rock"
+    if @move1 == ("scissors") && @move2 == ("rock")
       return "#{@move1} was beaten by #{@move2}"
     end
-    if @move1 == "rock" && @move2 == "scissors"
+    if @move1 == ("rock") && @move2 == ("scissors")
       return "#{@move1} beats #{@move2}"
     end
-    if @move1 == "rock" && @move2 == "paper"
+    if @move1 == ("rock") && @move2 == ("paper")
       return "#{@move1} was beaten by #{@move2}"
     end
-    if @move1 == "paper" && @move2 == "rock"
+    if @move1 == ("paper") && @move2 == ("rock")
       return "#{@move1} beats #{@move2}"
     end
-    if @move1 == "paper" && @move2 == "scissors"
+    if @move1 == ("paper") && @move2 == ("scissors")
       return "#{@move1} was beaten by #{@move2}"
     end
     if @move1 == @move2
       return "#{@move1} and #{@move2} drew"
     end
-  else return "Please enter correct move"
+  else "they still need to choose a proper move..."
     end
   end
